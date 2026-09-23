@@ -1,0 +1,79 @@
+:root {
+    color-scheme: light;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #17211b;
+    background: #e8f1ea;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: radial-gradient(circle at top right, #f7d8a6 0, transparent 38%),
+                linear-gradient(135deg, #dcece0, #f4f0df);
+}
+
+.panel {
+    width: min(100%, 650px);
+    padding: clamp(2rem, 7vw, 5rem);
+    border: 1px solid rgba(23, 33, 27, 0.16);
+    border-radius: 8px;
+    background: rgba(255, 252, 241, 0.86);
+    box-shadow: 0 24px 60px rgba(33, 58, 42, 0.16);
+}
+
+.eyebrow {
+    margin: 0 0 1.5rem;
+    color: #a04d2a;
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 4.8rem);
+    line-height: 0.98;
+    font-weight: normal;
+}
+
+.description {
+    max-width: 34rem;
+    margin: 1.5rem 0 2rem;
+    color: #526157;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-left: 4px solid #3c8757;
+    background: #e1f0e3;
+    font-weight: bold;
+}
+
+.status-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #3c8757;
+}
+
+.endpoint {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #a04d2a;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
